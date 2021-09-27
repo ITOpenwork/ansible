@@ -7,4 +7,4 @@
     win_updates:
       state: searched
     register: result
-  - debug: var=result
+  
