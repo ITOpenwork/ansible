@@ -1,6 +1,7 @@
 ---
 
 - name: Search Windows updates without installing them
+  hosts: jamiotest
   gather_facts: false
   tasks:
   - name: Search Windows Updates
