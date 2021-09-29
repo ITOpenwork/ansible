@@ -1,5 +1,5 @@
   - name: ensure Apache is updated and running
-  hosts: "{{ servers }}"
+    hosts: "{{ servers }}"
     tasks:
       - name: ensure apache is at the latest version
         yum:
