@@ -6,5 +6,7 @@
   tasks:
   - name: Start Jamio4
     win_service:
+      name: JamioAdmin4
+      state: started
       name: Jamio4
       state: started
