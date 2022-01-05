@@ -3,9 +3,10 @@
 - name: Start Jamio4 service
   hosts: "{{ servers }}"
   gather_facts: false
+  ansible.windows.win_service:
   tasks:
   - name: Start Jamio4
     win_service:
-    name: Jamio4
-    state: started
+     name: Jamio4
+     state: started
 
