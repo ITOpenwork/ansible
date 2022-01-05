@@ -6,7 +6,5 @@
   ansible.windows.win_service:
   tasks:
   - name: Start Jamio4
-    win_service:
      name: Jamio4
      state: started
-
