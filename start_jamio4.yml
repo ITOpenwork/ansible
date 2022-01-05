@@ -4,7 +4,7 @@
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
-  - name: Start Jamio4
+  - name: Start JamioAdmin4 & Jamio4
     win_service:
       name: JamioAdmin4
       state: started
