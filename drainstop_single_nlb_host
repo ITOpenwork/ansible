@@ -5,5 +5,5 @@
   gather_facts: false
   tasks:
   - name: DrainStop
-    win_command: nlb drainstop 'jamioweb:{{node}}' 
+    win_command: nlb drainstop  
     register: nlb_out
