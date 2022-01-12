@@ -1,0 +1,9 @@
+---
+
+- name: Start a NLB host
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Start
+    win_command: nlb start 'jamioweb:{{node}}' 
+    register: nlb_out
