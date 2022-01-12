@@ -1,0 +1,9 @@
+---
+
+- name: Drainstop a NLB host
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: DrainStop
+    win_command: nlb drainstop 'jamioweb:{{node}}' 
+    register: nlb_out
