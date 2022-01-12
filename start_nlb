@@ -5,5 +5,5 @@
   gather_facts: false
   tasks:
   - name: Start
-    win_command: nlb start 'jamioweb:{{node}}' 
+    win_command: nlb start  
     register: nlb_out
