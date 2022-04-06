@@ -1,14 +1,14 @@
 ---
 
-- name: Start "{{ servers[2] }}" service
-  hosts: "{{ servers[0] }}"
+- name: Start "{{ service }}" service
+  hosts: "{{ servers }}"
   gather_facts: false
   tasks:
-  - name: Start "{{ servers[1] }}"
+  - name: Start "{{ serviceadmin }}"
     win_service:
-      name: "{{ servers[1] }}"
+      name: "{{ serviceadmin }}"
       state: started
-  - name: Start "{{ servers[2] }}"
+  - name: Start "{{ service }}"
     win_service:
-      name: "{{ servers[2] }}"
+      name: "{{ service }}"
       state: started
