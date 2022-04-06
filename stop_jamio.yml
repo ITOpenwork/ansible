@@ -1,0 +1,14 @@
+---
+
+- name: Stop "{{ servers[2] }}" service
+  hosts: "{{ servers[0] }}"
+  gather_facts: false
+  tasks:
+  - name: Stop "{{ servers[1] }}"
+    win_service:
+      name: "{{ servers[1] }}"
+      state: stopped
+  - name: Stop "{{ servers[2] }}"
+    win_service:
+      name: "{{ servers[2] }}"
+      state: stopped
