@@ -1,0 +1,14 @@
+---
+
+- name: Stop desio2 services
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Stop JamioDes2
+    win_service:
+      name: JamioDes2
+      state: stopped
+  - name: Stop JamioEngineDes2
+    win_service:
+      name: JamioEngineDes2
+      state: stopped
