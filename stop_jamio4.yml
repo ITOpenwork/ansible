@@ -1,6 +1,6 @@
 ---
 
-- name: Stop Jamio4 service
+- name: Stop Jamio4 services
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
