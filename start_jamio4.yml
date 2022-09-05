@@ -1,6 +1,6 @@
 ---
 
-- name: Start Jamio4 service
+- name: Start Jamio4 services
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
