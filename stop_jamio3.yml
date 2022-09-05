@@ -1,0 +1,14 @@
+---
+
+- name: Stop Jamio3 services
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Stop JamioAdmin3
+    win_service:
+      name: JamioAdmin3
+      state: stopped
+  - name: Stop Jamio3
+    win_service:
+      name: Jamio3
+      state: stopped
