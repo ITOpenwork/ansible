@@ -1,0 +1,14 @@
+---
+
+- name: Start Jamio1 service
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Start JamioAdmin1
+    win_service:
+      name: JamioAdmin1
+      state: started
+  - name: Start Jamio1
+    win_service:
+      name: Jamio1
+      state: started
