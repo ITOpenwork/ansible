@@ -16,5 +16,5 @@
       state: started
   - name: Start JamioEngineTrial1
     win_service:
-      name: JamioEngineTrail1
+      name: JamioEngineTrial1
       state: started
