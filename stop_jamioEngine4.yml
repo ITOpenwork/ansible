@@ -1,0 +1,20 @@
+- name: Stop JamioEngine4 services
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Stop JamioArc1
+    win_service:
+      name: JamioArc1
+      state: stopped
+  - name: Stop JamioEngineArc1
+    win_service:
+      name: JamioEngineArc1
+      state: stopped
+  - name: Stop JamioTrial1
+    win_service:
+      name: JamioTrial1
+      state: stopped
+  - name: Stop JamioEngineTrial1
+    win_service:
+      name: JamioEngineTrail1
+      state: stopped
