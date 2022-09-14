@@ -1,0 +1,8 @@
+---
+
+- name: SVN switch Jamiotest01
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Switch SVN 
+    win_command: svn.exe switch "{{ repo }}{{ version }}" "{{ dest }}" 
