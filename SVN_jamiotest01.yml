@@ -6,7 +6,7 @@
   tasks:
   - name: Action SVN 
     subversion:
-	  username: "{{ username }}"
+      username: "{{ username }}"
       password: "{{ password }}"
       repo: "{{ repo }}"
       dest: "{{ dest }}"
