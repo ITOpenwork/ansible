@@ -1,0 +1,9 @@
+---
+
+- name: SVN update Jamiotest01
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Update SVN 
+    win_command: svn.exe update "{{ dest }}"
+    
