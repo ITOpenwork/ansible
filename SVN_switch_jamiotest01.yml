@@ -5,4 +5,4 @@
   gather_facts: false
   tasks:
   - name: Switch SVN 
-    win_command: svn.exe switch "{{ repo }}{{ version }}" "{{ dest }}" 
+    win_command: svn.exe switch --ignore-ancestry "{{ repo }}{{ version }}" "{{ dest }}" 
