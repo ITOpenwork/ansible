@@ -1,0 +1,16 @@
+---
+
+- name: SVN Jamiotest01
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Action SVN 
+    subversion:
+	  username: "{{ username }}"
+      password: "{{ password }}"
+      repo: "{{ repo }}"
+      dest: "{{ dest }}"
+      revision: "{{ revision }}"
+      switch: "{{ switch }}"
+      update: "{{ update }}"
+      
