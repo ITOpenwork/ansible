@@ -1,0 +1,10 @@
+---
+
+- name: Dump script ARC 
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Run Dump_ARC
+    ansible.builtin.shell: dumpARC.sh
+    args:
+      chdir: /backup/dump/
