@@ -1,0 +1,10 @@
+---
+
+- name: Dump script paas 
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Run Dump_Paas
+    ansible.builtin.shell: dumpPaaS.sh
+    args:
+      chdir: /backup/dump/ 
