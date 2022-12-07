@@ -5,6 +5,4 @@
   gather_facts: false
   tasks:
   - name: Run Dump_Desio
-    ansible.builtin.shell: ./dumpDesio.sh
-    args:
-      chdir: /backup/dump/ 
+    ansible.builtin.shell: /backup/dump/dumpDesio.sh
