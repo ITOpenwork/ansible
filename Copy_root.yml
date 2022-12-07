@@ -1,0 +1,8 @@
+---
+
+- name: Copy root  
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Copy_root 
+    ansible.builtin.shell: ls -lat /root > /tmp/ls-out.txt
