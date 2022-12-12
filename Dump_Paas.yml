@@ -6,3 +6,6 @@
   tasks:
   - name: Run Dump_Paas
     ansible.builtin.shell: /backup/dump/dumpPaaS.sh
+    args:
+      executable: /bin/bash
+      chdir: /backup/dump/
