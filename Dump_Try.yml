@@ -7,4 +7,4 @@
   - name: Run Dump_TRIAL
     ansible.builtin.shell: dumpTRIAL.sh
     args:
-      chdir: /backup/dump/
+      chdir: backup/dump/
