@@ -6,3 +6,6 @@
   tasks:
   - name: Run Dump_ARC
     ansible.builtin.shell: /backup/dump/dumpARC.sh
+    args:
+      executable: /bin/bash
+      chdir: /backup/dump/
