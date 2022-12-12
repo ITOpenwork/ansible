@@ -5,4 +5,5 @@
   gather_facts: false
   tasks:
   - name: Run Dump_TRIAL
-    ansible.builtin.command: /backup/dump/dumpTRIAL.sh
+    ansible.builtin.script: dumpTRIAL.sh
+    chdir: /backup/dump/
