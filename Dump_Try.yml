@@ -6,3 +6,5 @@
   tasks:
   - name: Run Dump_TRIAL
     ansible.builtin.shell: /backup/dump/dumpTRIAL.sh
+    args:
+      chdir: dump/
