@@ -6,3 +6,6 @@
   tasks:
   - name: Run Dump_Desio
     ansible.builtin.shell: /backup/dump/dumpDesio.sh
+    args:
+      executable: /bin/bash
+      chdir: /backup/dump/
