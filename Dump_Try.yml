@@ -8,3 +8,4 @@
     ansible.builtin.shell: /backup/dump/dumpTRIAL.sh
     args:
       executable: /bin/bash
+      chdir: /backup/dump/
