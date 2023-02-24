@@ -1,0 +1,11 @@
+---
+
+- name: task yobiportal_maintenance_on 
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Run maintenance_on
+    ansible.builtin.shell: /opt/maintenance_on.sh
+    args:
+      executable: /bin/bash
+      chdir: /opt
