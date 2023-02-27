@@ -1,0 +1,10 @@
+---
+
+- name: Stop application pool
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Stop webhook
+    win_iis_webapppool:
+      name: webhook
+      state: stopped
