@@ -1,0 +1,42 @@
+---
+
+- name: Stop webapp jamioweb
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Stop adminconsole
+    win_iis_webapppool:
+      name: adminconsole
+      state: stopped
+  - name: Stop api
+    win_iis_webapppool:
+      name: api
+      state: stopped
+  - name: Stop esbrowser
+    win_iis_webapppool:
+      name: esbrowser
+      state: stopped
+  - name: Stop JamioGW
+    win_iis_webapppool:
+      name: JamioGW
+      state: stopped
+  - name: Stop jamioPlugMessage
+    win_iis_webapppool:
+      name: jamioPlugMessage
+      state: stopped
+  - name: Stop openapi
+    win_iis_webapppool:
+      name: openapi
+      state: stopped
+  - name: Stop sso
+    win_iis_webapppool:
+      name: sso
+      state: stopped
+  - name: Stop webhook
+    win_iis_webapppool:
+      name: webhook
+      state: stopped
+  - name: Stop survey
+    win_iis_webapppool:
+      name: survey
+      state: stopped
