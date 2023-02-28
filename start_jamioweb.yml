@@ -1,0 +1,43 @@
+
+---
+
+- name: Start webapp jamioweb1
+  hosts: "{{ servers }}"
+  gather_facts: false
+  tasks:
+  - name: Start adminconsole
+    win_iis_webapppool:
+      name: adminconsole
+      state: started
+   - name: Start api
+    win_iis_webapppool:
+      name: api
+      state: started
+   - name: Start esbrowser
+    win_iis_webapppool:
+      name: esbrowser
+      state: started
+   - name: Start JamioGW
+    win_iis_webapppool:
+      name: JamioGW
+      state: started
+   - name: Start jamioPlugMessage
+    win_iis_webapppool:
+      name: jamioPlugMessage
+      state: started
+   - name: Start openapi
+    win_iis_webapppool:
+      name: openapi
+      state: started
+   - name: Start sso
+    win_iis_webapppool:
+      name: sso
+      state: started
+   - name: Start webhook
+    win_iis_webapppool:
+      name: webhook
+      state: started
+   - name: Start survey
+    win_iis_webapppool:
+      name: survey
+      state: started
