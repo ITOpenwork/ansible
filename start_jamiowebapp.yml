@@ -9,35 +9,35 @@
     win_iis_webapppool:
       name: adminconsole
       state: started
-   - name: Start api
+  - name: Start api
     win_iis_webapppool:
       name: api
       state: started
-   - name: Start esbrowser
+  - name: Start esbrowser
     win_iis_webapppool:
       name: esbrowser
       state: started
-   - name: Start JamioGW
+  - name: Start JamioGW
     win_iis_webapppool:
       name: JamioGW
       state: started
-   - name: Start jamioPlugMessage
+  - name: Start jamioPlugMessage
     win_iis_webapppool:
       name: jamioPlugMessage
       state: started
-   - name: Start openapi
+  - name: Start openapi
     win_iis_webapppool:
       name: openapi
       state: started
-   - name: Start sso
+  - name: Start sso
     win_iis_webapppool:
       name: sso
       state: started
-   - name: Start webhook
+  - name: Start webhook
     win_iis_webapppool:
       name: webhook
       state: started
-   - name: Start survey
+  - name: Start survey
     win_iis_webapppool:
       name: survey
       state: started
