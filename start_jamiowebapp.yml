@@ -1,7 +1,7 @@
 
 ---
 
-- name: Start webapp jamioweb1
+- name: Start webapp jamioweb
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
