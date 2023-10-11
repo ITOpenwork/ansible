@@ -1,9 +1,10 @@
 ---
 
-- name: backup db sql server 
+- name: backup 
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
+    - name: run dump sqlserver
   lowlydba.sqlserver.backup:
     sql_instance: MSSQLSERVER02
     sql_username: sa
