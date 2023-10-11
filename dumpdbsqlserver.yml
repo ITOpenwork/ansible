@@ -1,15 +1,14 @@
 ---
 
-- name: backup 
+- name: backup db sql server 
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
     - name: run dump sqlserver
-  lowlydba.sqlserver.backup:
-    sql_instance: MSSQLSERVER02
-    sql_username: sa
-    sql_password: Password!
-    database: master
-    type: full
-    file_count: 8
-    path: C:\SQL2022\Evaluation_ITA\bk
+        lowlydba.sqlserver.backup:
+        sql_instance: MSSQLSERVER02
+        sql_username: sa
+        sql_password: Password!
+        database: master
+        type: full
+        file_count: 8
