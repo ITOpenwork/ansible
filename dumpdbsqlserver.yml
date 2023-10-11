@@ -1,6 +1,6 @@
 ---
 
-- name: Dump db sql server 
+- name: backup db sql server 
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
